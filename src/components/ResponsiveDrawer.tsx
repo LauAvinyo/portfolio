@@ -31,13 +31,20 @@ const useStyles = makeStyles((theme: Theme) =>
       [theme.breakpoints.up('sm')]: {
         width: drawerWidth,
         flexShrink: 0,
+        outline: 0,
       },
+      boxShadow: 'none',
     },
     appBar: {
       [theme.breakpoints.up('sm')]: {
         width: `calc(100% - ${drawerWidth}px)`,
-        marginLeft: drawerWidth,
+        marginLeft: drawerWidth, 
+        background: 'transparent', 
+        boxShadow: 'none'
       },
+      background: 'transparent', 
+      boxShadow: 'none',
+      color: 'grey',
     },
     menuButton: {
       marginRight: theme.spacing(2),
@@ -103,9 +110,6 @@ export default function ResponsiveDrawer(props: any) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
-             SET THE TITLE OF WHAT WE ARE DOING !
-          </Typography>
         </Toolbar>
       </AppBar>
       <nav className={classes.drawer} aria-label="mailbox folders">

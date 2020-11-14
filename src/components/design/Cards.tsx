@@ -50,10 +50,10 @@ export function CaseOneCard() {
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
-            User Resarch
+            Recruiting Users
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
-            Hola, es la lauraa Hola, es la lauraa Hola, es la lauraa Hola, es la lauraaHola, es la lauraaHola, es la lauraaHola, es la lauraaHola, es la lauraa Hola, es la lauraaHola, es la lauraa Hola, es la lauraa  Hola, es la lauraa
+            Here I have make a present workflow I followed to select and recruite appropiate users for a contextual interview.
           </Typography>
         </CardContent>
         <HashRouter basename="/">
@@ -81,10 +81,10 @@ export function CaseTwoCard() {
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
-            Interaction
+            Conceptualizing Interaction
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
-            Hola, es la lauraa Hola, es la lauraa Hola, es la lauraa Hola, es la lauraaHola, es la lauraaHola, es la lauraaHola, es la lauraaHola, es la lauraa Hola, es la lauraaHola, es la lauraa Hola, es la lauraa  Hola, es la lauraa
+            
           </Typography>
         </CardContent>
         <HashRouter basename="/">
@@ -112,10 +112,10 @@ export function CaseThreeCard() {
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
-            My PortFolio
+            My Portfolio
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
-            Hola, es la lauraa Hola, es la lauraa Hola, es la lauraa Hola, es la lauraaHola, es la lauraaHola, es la lauraaHola, es la lauraaHola, es la lauraa Hola, es la lauraaHola, es la lauraa Hola, es la lauraa  Hola, es la lauraa
+            In this case study I go through the steps I have followed to create this app you are looking right now. 
           </Typography>
         </CardContent>
         <HashRouter basename="/">
