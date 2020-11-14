@@ -1,23 +1,27 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/portfolio/static/js/main.02be748e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.02be748e.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.4cd8c666.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.4cd8c666.js.map",
-    "static/js/2.61a7adc6.chunk.js": "/portfolio/static/js/2.61a7adc6.chunk.js",
-    "static/js/2.61a7adc6.chunk.js.map": "/portfolio/static/js/2.61a7adc6.chunk.js.map",
-    "static/js/3.b0e29355.chunk.js": "/portfolio/static/js/3.b0e29355.chunk.js",
-    "static/js/3.b0e29355.chunk.js.map": "/portfolio/static/js/3.b0e29355.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.d3facea7.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d3facea7.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.a26a4fca.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.a26a4fca.js.map",
+    "static/css/2.fc82ef07.chunk.css": "/portfolio/static/css/2.fc82ef07.chunk.css",
+    "static/js/2.3deb8e42.chunk.js": "/portfolio/static/js/2.3deb8e42.chunk.js",
+    "static/js/2.3deb8e42.chunk.js.map": "/portfolio/static/js/2.3deb8e42.chunk.js.map",
+    "static/js/3.822b706b.chunk.js": "/portfolio/static/js/3.822b706b.chunk.js",
+    "static/js/3.822b706b.chunk.js.map": "/portfolio/static/js/3.822b706b.chunk.js.map",
     "index.html": "/portfolio/index.html",
+    "static/css/2.fc82ef07.chunk.css.map": "/portfolio/static/css/2.fc82ef07.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/portfolio/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.61a7adc6.chunk.js.LICENSE.txt": "/portfolio/static/js/2.61a7adc6.chunk.js.LICENSE.txt",
-    "static/media/facesAsurelle.1fc9168e.png": "/portfolio/static/media/facesAsurelle.1fc9168e.png"
+    "static/js/2.3deb8e42.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3deb8e42.chunk.js.LICENSE.txt",
+    "static/media/facesAsurelle.1fc9168e.png": "/portfolio/static/media/facesAsurelle.1fc9168e.png",
+    "static/media/index.css": "/portfolio/static/media/poppins-latin-900italic.babad407.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.4cd8c666.js",
-    "static/js/2.61a7adc6.chunk.js",
+    "static/js/runtime-main.a26a4fca.js",
+    "static/css/2.fc82ef07.chunk.css",
+    "static/js/2.3deb8e42.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.02be748e.chunk.js"
+    "static/js/main.d3facea7.chunk.js"
   ]
 }
