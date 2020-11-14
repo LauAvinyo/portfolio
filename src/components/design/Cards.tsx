@@ -7,6 +7,12 @@ import Typography from '@material-ui/core/Typography';
 import logo from './facesAsurelle.png'; // with import
 import CardActions from '@material-ui/core/CardActions';
 import { Button } from '@material-ui/core';
+import { Router, Link } from 'react-router-dom';
+import {
+  HashRouter,
+  Route
+} from "react-router-dom";
+
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -50,11 +56,13 @@ export function CaseOneCard() {
             Hola, es la lauraa Hola, es la lauraa Hola, es la lauraa Hola, es la lauraaHola, es la lauraaHola, es la lauraaHola, es la lauraaHola, es la lauraa Hola, es la lauraaHola, es la lauraa Hola, es la lauraa  Hola, es la lauraa
           </Typography>
         </CardContent>
+        <HashRouter basename="/">
         <CardActions className={classes.controls}>
-          <Button size="small" color="secondary" component={'a'} href={"/case-one"} >
+          <Button size="small" color="secondary" component={Link} to={"/fitnessApp"}>
             Read More
           </Button>
       </CardActions>
+      </ HashRouter>
       </div>
       <CardMedia
         className={classes.cover}
@@ -79,11 +87,13 @@ export function CaseTwoCard() {
             Hola, es la lauraa Hola, es la lauraa Hola, es la lauraa Hola, es la lauraaHola, es la lauraaHola, es la lauraaHola, es la lauraaHola, es la lauraa Hola, es la lauraaHola, es la lauraa Hola, es la lauraa  Hola, es la lauraa
           </Typography>
         </CardContent>
+        <HashRouter basename="/">
         <CardActions className={classes.controls}>
-          <Button size="small" color="secondary" component={'a'} href={"/case-two"} >
+          <Button size="small" color="secondary" component={Link} to={"/designWeek"}>
             Read More
           </Button>
       </CardActions>
+      </ HashRouter>
       </div>
       <CardMedia
         className={classes.cover}
@@ -108,11 +118,13 @@ export function CaseThreeCard() {
             Hola, es la lauraa Hola, es la lauraa Hola, es la lauraa Hola, es la lauraaHola, es la lauraaHola, es la lauraaHola, es la lauraaHola, es la lauraa Hola, es la lauraaHola, es la lauraa Hola, es la lauraa  Hola, es la lauraa
           </Typography>
         </CardContent>
+        <HashRouter basename="/">
         <CardActions className={classes.controls}>
-          <Button size="small" color="secondary" component={'a'} href={"/case-two"} >
+          <Button size="small" color="secondary" component={Link} to={"/portfolioApp"}>
             Read More
           </Button>
       </CardActions>
+      </ HashRouter>
       </div>
       <CardMedia
         className={classes.cover}

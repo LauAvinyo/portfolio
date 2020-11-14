@@ -1,7 +1,7 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
-  Switch,
+  HashRouter as Router,
+  Link,
   Route
 } from "react-router-dom";
 import About from './About'
@@ -11,15 +11,20 @@ import Fitness from './design/fitness/Fitness'
 
 export default function AppRouter() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/about" component = { About } />
-        <Route path="/design" component = { Design } />
-        <Route path="/case-one" component = { Fitness } />
-        <Route path="/case-two" component = { About } />
-        <Route path="/case-three" component = { About } />
-        <Route path="/science" component = { Science } />
-      </Switch>
+    <Router basename="/">
+    <Route exact path="/science" component={Science} />
+    <Route path="/about" component={About} />
+    <Route path="/design" component={ Design } />
+    <Route path="/fitnessApp" component={ Fitness } />
+    <Route path="/designWeek" component={ Fitness } />
+    <Route path="/portfolioApp" component={ Fitness } />
     </Router>
   );
 }
+
+{/* <Route path="/portfolio" component = { About } />
+<Route path="/portfolio/design" component = { Design } />
+<Route path="/case-one" component = { Fitness } />
+<Route path="/case-two" component = { About } />
+<Route path="/case-three" component = { About } />
+<Route path="/science" component = { Science } /> */}

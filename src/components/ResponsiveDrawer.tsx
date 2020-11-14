@@ -14,7 +14,11 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme, Theme, createStyles } from '@material-ui/core/styles';
-
+import { Router, Link } from 'react-router-dom';
+import {
+  HashRouter,
+  Route
+} from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -69,13 +73,17 @@ export default function ResponsiveDrawer(props: any) {
     <div>
       <div className={classes.toolbar} />
       <Divider />
+      <HashRouter basename="/">
       <List>
         {['About', 'Design', 'Science'].map((text, index) => (
-          <ListItem button key={text} component={'a'} href={"/" + text.toLowerCase()} >
+          <ListItem button key={text} component={Link} to={"/"+ text.toLowerCase() } >
             <ListItemText primary={text} />
           </ListItem>
         ))}
       </List>
+
+      </ HashRouter>
+
     </div>
   );
 
