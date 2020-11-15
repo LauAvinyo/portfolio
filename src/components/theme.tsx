@@ -40,7 +40,7 @@ export default createMuiTheme({
           'sans-serif'
         ].join(','),
         fontSize: "2rem",
-        textAlign: 'center', 
+        textAlign: 'start', 
         fontWeight: 200, 
         marginBottom: 6,
       }, 
@@ -54,6 +54,18 @@ export default createMuiTheme({
         fontSize: "1rem",
         textAlign: 'center', 
         fontWeight: 500, 
+        marginBottom: 6,
+      },
+      h4:{
+        fontFamily: [
+          'Poppins',
+          'Helvetica',
+          'Arial',
+          'sans-serif'
+        ].join(','),
+        fontSize: "1.2rem",
+        textAlign: 'start', 
+        fontWeight: 400, 
         marginBottom: 6,
       }
     }, 

@@ -82,7 +82,7 @@ export default function ResponsiveDrawer(props: any) {
       <Divider />
       <HashRouter basename="/">
       <List>
-        {['About', 'Design', 'Science'].map((text, index) => (
+        {['About', 'Design'].map((text, index) => ( // , 'Science'
           <ListItem button key={text} component={Link} to={"/"+ text.toLowerCase() } >
             <ListItemText primary={text} />
           </ListItem>

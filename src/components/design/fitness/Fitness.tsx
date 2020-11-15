@@ -1,7 +1,8 @@
-import { makeStyles, Theme, createStyles, Typography } from '@material-ui/core';
+import { makeStyles, Theme, createStyles, Typography, Paper } from '@material-ui/core';
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-
+import persona from './protopersona.png'; // with import
+import table from './table.png'; // with import
 
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -25,6 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     demo: {
       backgroundColor: theme.palette.background.paper,
+      padding: 10
     },
     title: {
       margin: theme.spacing(4, 0, 2),
@@ -37,9 +39,9 @@ export default function Fitness() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={2} direction="row"
+      <Grid container spacing={2} direction="column"
         justify="center"
-        alignItems="flex-start"
+        alignItems="center"
       >
         <Grid item xs={10}>
           <Typography component="h1" variant="h1">
@@ -63,7 +65,12 @@ export default function Fitness() {
           <Typography variant="body1" className={classes.txt} >
           To avoid falling in the "Designing for Everyone is designing for no one", in this project I will focus on a concrete group of users. Following the guidelines of Travis and Hodson in Think Like a UX designer first, my team and I did a brainstorming of possible users. After that, I distributed the groups on the following table. The X-Axis indicates how easy it is for me to access a given group, while the Y-Axis shows how interested I am on them in this stage of the product. 
         </Typography>
-        TABLE
+        </Grid>
+
+        <Grid item xs={10}>
+        <img src={table} alt="table" height="400" width="568" className={classes.demo}/>
+        </Grid>
+        <Grid item xs={10}>
         <Typography variant="body1" className={classes.txt} >
         From the table, I concluded that the main group is "People with interest in fitness and for their health". That is, we will focus on making a tool to help people that is already aware that physical exercise is key for a healthy life, and they have an idea of what types of activities are there (muscular strength, cardio, mobility). But, they are not Sports Teams players, either professional. Demographically, there is no restriction.
         </Typography>
@@ -129,13 +136,19 @@ export default function Fitness() {
         </Typography>
         </Grid>
         <Grid item xs={10}>
-          <Typography component="h2" variant="h2">
-            Proto-Persona
-          </Typography>
-          <Typography variant="body1" className={classes.txt} >
-          Now that we have a focus group, it is time to start working on empathy with them. To do so, I did a simple proto persona. 
+        <Typography component="h2" variant="h2">
+        Proto-Persona
+      </Typography>
+              <Typography variant="body1" className={classes.txt} >
+          Now that we have a focus group, it is time to start working on empathy with them. To do so, I did a simple proto persona based on Lean UX design. In the image below there is its representation. 
         </Typography>
-        PERSONA!
+        </Grid>
+
+        <Grid item xs={10}>
+          <Paper> <img src={persona} alt="persona" height="500" width="543" className={classes.demo}/> </Paper>
+          
+        </Grid>
+        <Grid item xs={10}>
         <Typography variant="body1" className={classes.txt} >
         Joanna helps a lot while working on the next steps, but, one should notice that there are some facts of here that if generalized can be dangerous for the product. For instance, not all users of our focus groups have low income, or they are into minimalism.
         </Typography>
@@ -145,8 +158,12 @@ export default function Fitness() {
             Screnner
           </Typography>
           <Typography variant="body1" className={classes.txt} >
-          I will perform contextual interviews with users. In this research it is necessary to interview a group of four to six participants, depending on the level of similarity between them. In principle, the interview will take place in an open space, for example, a walk or a callisthenics park. Due to the current mobility restrictions these must be inhabitants of the same municipality as me. I have send a "Google Form" with the the screnner questions that you can find here [link] to each of the candidates. 
+          I will perform contextual interviews with users. In this research it is necessary to interview a group of four to six participants, depending on the level of similarity between them. In principle, the interview will take place in an open space, for example, a walk or a callisthenics park. Due to the current mobility restrictions these must be inhabitants of the same municipality as me. I have send a "Google Form" with the the screnner questions that you can find below to each of the candidates.
         </Typography>
+        </Grid>
+        <Grid item xs={10}>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vRUShPhtET7m1GP8VWW3BD6zJbfIzNMSYEEtqgMM-C2PJ6vW8s2T5iYXM5uOxKrRbPzjdZ3fq5MlfEL/pub?embedded=true"
+        width="640" height="480" frameBorder="0"  title='screener'></iframe>
         </Grid>
         <Grid item xs={10}>
           <Typography component="h2" variant="h2">
