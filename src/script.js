@@ -22,7 +22,7 @@ const scene = new THREE.Scene()
  * Textures
  */
 const textureLoader = new THREE.TextureLoader()
-const matcapTexture = textureLoader.load('textures/matcaps/8.png')
+const matcapTexture = textureLoader.load('textures/matcaps/7.png')
 
 /**
  * Fonts
@@ -30,15 +30,14 @@ const matcapTexture = textureLoader.load('textures/matcaps/8.png')
 const fontLoader = new FontLoader()
 
 fontLoader.load(
-    '/fonts/helvetiker_regular.typeface.json',
-    (font) =>
-    {
+    '/fonts/nunito.json',
+    (font) => {
         // Material
         const material = new THREE.MeshMatcapMaterial({ matcap: matcapTexture })
 
         // Text
         const textGeometry = new TextGeometry(
-            'Bruno Simon',
+            "Hello there!",
             {
                 font: font,
                 size: 0.5,
@@ -59,8 +58,7 @@ fontLoader.load(
         // Donuts
         const donutGeometry = new THREE.TorusGeometry(0.3, 0.2, 32, 64)
 
-        for(let i = 0; i < 100; i++)
-        {
+        for (let i = 0; i < 100; i++) {
             const donut = new THREE.Mesh(donutGeometry, material)
             donut.position.x = (Math.random() - 0.5) * 10
             donut.position.y = (Math.random() - 0.5) * 10
@@ -83,8 +81,7 @@ const sizes = {
     height: window.innerHeight
 }
 
-window.addEventListener('resize', () =>
-{
+window.addEventListener('resize', () => {
     // Update sizes
     sizes.width = window.innerWidth
     sizes.height = window.innerHeight
@@ -127,8 +124,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
  */
 const clock = new THREE.Clock()
 
-const tick = () =>
-{
+const tick = () => {
     const elapsedTime = clock.getElapsedTime()
 
     // Update controls
